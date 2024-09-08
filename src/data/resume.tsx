@@ -179,6 +179,36 @@ export const DATA = {
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
     {
+      title: "SwiftCart E-commerce API",
+      href: "https://swiftcart-server.vercel.app/",
+      dates: "JAN 2024 - FEB 2024",
+      active: true,
+      description:
+        "SwiftCart is a Node.js-based e-commerce platform API built with Express, MongoDB, and Stripe for payment processing.",
+      technologies: [
+        "NodeJs",
+        "Typescript",
+        "Express",
+        "Mongoose",
+        "stripe",
+        "morgan",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://swiftcart-server.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/arifnextdev/swiftcart-server",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
+    {
       title: "BrainPlus",
       href: "https://brainpulse.vercel.app/",
       dates: "FEB 2024 - May 2024",
@@ -206,6 +236,41 @@ export const DATA = {
       ],
       image: "",
       video: "https://cdn.llm.report/openai-demo.mp4",
+    },
+    {
+      title: "CRM Project",
+      href: "https://crm-project-phi-azure.vercel.app/signin",
+      dates: "April 2023 - March 2024",
+      active: true,
+      description:
+        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+      technologies: [
+        "Next.js",
+        "Next Auth",
+        "Typescript",
+        "MySql",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Nodejs",
+        "Express",
+        "Rest Api",
+        "Jwt",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://automatic.chat",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/arifnextdev/crm-project",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
     {
       title: "CRM Project",

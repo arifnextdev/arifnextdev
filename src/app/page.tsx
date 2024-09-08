@@ -154,7 +154,7 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-10 max-w-[800px] mx-auto">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3 md:gap-10 max-w-[800px] xl:max-w-full mx-auto">
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
@@ -176,9 +176,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="iconcloud" >
+      <section id="iconcloud">
         <div className="flex justify-center">
-        <IconClouds />
+          <IconClouds />
         </div>
       </section>
 
