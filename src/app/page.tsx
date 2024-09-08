@@ -9,6 +9,7 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import HeroBg from "@/components/ui/HeroBg";
+import IconClouds from "@/components/ui/iconCloud";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
@@ -28,7 +29,8 @@ export default function Page() {
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-2.5">
               <BlurFade delay={BLUR_FADE_DELAY} className="" yOffset={8}>
-                <TypingAnimation duration={50}
+                <TypingAnimation
+                  duration={50}
                   className="text-start text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                   text={`Hi, I'm ${DATA.name} 👋`}
                 />
@@ -152,7 +154,7 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-10 max-w-[800px] mx-auto">
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
@@ -174,6 +176,12 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="iconcloud" >
+        <div className="flex justify-center">
+        <IconClouds />
+        </div>
+      </section>
+
       {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
