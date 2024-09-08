@@ -63,7 +63,7 @@ export default function Page() {
               </Link>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 md:size-40 border">
+              <Avatar className="size-20 sm:size-40 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
