@@ -1,3 +1,4 @@
+import MagicCards from "@/components/custom/MagicCard";
 import { HackathonCard } from "@/components/hackathon-card";
 import AnimatedGradientText from "@/components/magicui/animated-gradient-text";
 import BlurFade from "@/components/magicui/blur-fade";
@@ -40,19 +41,26 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
-              <BlurFade>
-                <AnimatedGradientText className="cursor-pointer">
-                  🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
-                  <span
-                    className={cn(
-                      `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
-                    )}
-                  >
-                    Download Resume
-                  </span>
-                  <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-                </AnimatedGradientText>
-              </BlurFade>
+              <Link
+                href={
+                  "https://drive.google.com/uc?export=download&id=1DhN72hOtew3SqGAi1rLtZVVkD6zyRjiw"
+                }
+              >
+                {" "}
+                <BlurFade>
+                  <AnimatedGradientText className="cursor-pointer">
+                    🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+                    <span
+                      className={cn(
+                        `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
+                      )}
+                    >
+                      Download Resume
+                    </span>
+                    <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                  </AnimatedGradientText>
+                </BlurFade>
+              </Link>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 md:size-40 border">
@@ -63,6 +71,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       <section id="about ">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
@@ -73,54 +82,53 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <section id="work">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
-          </BlurFade>
-          {DATA.work.map((work, id) => (
-            <BlurFade
-              key={work.company}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-            >
-              <ResumeCard
-                key={work.company}
-                logoUrl={work.logoUrl}
-                altText={work.company}
-                title={work.company}
-                subtitle={work.title}
-                href={work.href}
-                badges={work.badges}
-                period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
-              />
-            </BlurFade>
-          ))}
-        </div>
+
+      <section className="grid gap-5 grid-cols-1 xl:grid-cols-2 xl:gap-10">
+        <MagicCards>
+          <section id="work" className="">
+            <div className="flex min-h-0 flex-col gap-y-3">
+              <BlurFade delay={BLUR_FADE_DELAY * 5}>
+                <h2 className="text-xl font-bold">Work Experience</h2>
+              </BlurFade>
+              {DATA.work.map((work, id) => (
+                <ResumeCard
+                  key={work.company}
+                  logoUrl={work.logoUrl}
+                  altText={work.company}
+                  title={work.company}
+                  subtitle={work.title}
+                  href={work.href}
+                  badges={work.badges}
+                  period={`${work.start} - ${work.end ?? "Present"}`}
+                  description={work.description}
+                />
+              ))}
+            </div>
+          </section>
+        </MagicCards>
+
+        <MagicCards>
+          <section id="education">
+            <div className="flex min-h-0 flex-col gap-y-3">
+              <BlurFade delay={BLUR_FADE_DELAY * 7}>
+                <h2 className="text-xl font-bold">Education</h2>
+              </BlurFade>
+              {DATA.education.map((education, id) => (
+                <ResumeCard
+                  key={education.school}
+                  href={education.href}
+                  logoUrl={education.logoUrl}
+                  altText={education.school}
+                  title={education.school}
+                  subtitle={education.degree}
+                  period={`${education.start} - ${education.end}`}
+                />
+              ))}
+            </div>
+          </section>
+        </MagicCards>
       </section>
-      <section id="education">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
-          </BlurFade>
-          {DATA.education.map((education, id) => (
-            <BlurFade
-              key={education.school}
-              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
-            >
-              <ResumeCard
-                key={education.school}
-                href={education.href}
-                logoUrl={education.logoUrl}
-                altText={education.school}
-                title={education.school}
-                subtitle={education.degree}
-                period={`${education.start} - ${education.end}`}
-              />
-            </BlurFade>
-          ))}
-        </div>
-      </section>
+
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>

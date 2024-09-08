@@ -28,6 +28,8 @@ export const DATA = {
     "Majic Ui",
     "Tailwind Css",
     "Wordpress",
+    "figma",
+    "canva",
     "Adobe Illustrator",
     "Adobe Photoshop",
   ],
@@ -60,10 +62,10 @@ export const DATA = {
 
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
+      resume: {
+        name: "Resume download",
+        url: "https://drive.google.com/uc?export=download&id=1DhN72hOtew3SqGAi1rLtZVVkD6zyRjiw",
+        icon: Icons.resume,
         navbar: true,
       },
       email: {
