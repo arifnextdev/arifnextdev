@@ -185,31 +185,27 @@ export const DATA = {
 	projects: [
 		{
 			title: "Aevita — Digital Health Platform",
-			href: "#",
-			dates: "2024",
+			href: "https://www.aevita.com",
+			dates: "2025",
 			active: true,
 			description:
-				"Built scalable backend APIs for online intake forms, video consultations, and patient management. Implemented secure authentication, appointment scheduling, and medication workflow systems. Optimized database queries and application performance to support real-time health tracking and communication.",
+				"Aevita helps with responsible weight loss using GLP-1 medication and personal guidance. Built scalable backend APIs for online intake forms, video consultations, and patient management. Implemented secure authentication, appointment scheduling, and medication workflow systems.",
 			technologies: [
-				"Node.js",
-				"NestJS",
+				"Supabase",
+				"Nextjs",
 				"TypeScript",
 				"PostgreSQL",
-				"Prisma",
-				"REST API",
-				"JWT",
-				"Docker",
+				"Tailwind CSS",
 			],
 			links: [
 				{
 					type: "Website",
-					href: "#",
+					href: "https://www.aevita.com",
 					icon: <Icons.globe className="size-3" />,
 				},
 			],
-			image: "",
-			video:
-				"https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+			image: "/projects/aevita.png",
+			video: "",
 		},
 		{
 			title: "WeOut — Experience Booking Platform",
@@ -217,9 +213,12 @@ export const DATA = {
 			dates: "2024",
 			active: true,
 			description:
-				"Built a platform that connects users with local hosts to discover and book unique experiences and outdoor activities. Implemented booking workflows, user authentication, and event management features. Designed scalable backend services and responsive UI for seamless user interaction.",
+				"Discover. Book. Go Out. A platform connecting users with local hosts for events like kayaking, live music, and unique experiences. Implemented booking workflows, user authentication, and responsive UI for seamless discovery and adventure booking.",
 			technologies: [
 				"Next.js",
+				"Nest.js",
+				"Redis",
+				"RabbitMQ",
 				"TypeScript",
 				"Node.js",
 				"PostgreSQL",
@@ -235,8 +234,8 @@ export const DATA = {
 					icon: <Icons.globe className="size-3" />,
 				},
 			],
-			image: "",
-			video: "https://cdn.magicui.design/bento-grid.mp4",
+			image: "/projects/weout.png",
+			video: "",
 		},
 		{
 			title: "AsiaPlusBD — E-commerce Platform",
@@ -262,8 +261,8 @@ export const DATA = {
 					icon: <Icons.globe className="size-3" />,
 				},
 			],
-			image: "",
-			video: "https://cdn.llm.report/openai-demo.mp4",
+			image: "/projects/asiaplus.png",
+			video: "",
 		},
 		{
 			title: "BrainPlus — Quiz Platform",
@@ -291,9 +290,8 @@ export const DATA = {
 					icon: <Icons.github className="size-3" />,
 				},
 			],
-			image: "",
-			video:
-				"https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+			image: "/projects/brainplus.png",
+			video: "",
 		},
 		{
 			title: "CRM Project",
@@ -326,8 +324,8 @@ export const DATA = {
 					icon: <Icons.github className="size-3" />,
 				},
 			],
-			image: "",
-			video: "https://cdn.magicui.design/bento-grid.mp4",
+			image: "/projects/crm.png",
+			video: "",
 		},
 		{
 			title: "SwiftCart — E-commerce API",
