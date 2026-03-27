@@ -24,63 +24,119 @@ interface Skill {
 }
 
 const SKILLS: Skill[] = [
-  // Frontend
-  { name: "React",          category: "frontend", icon: "⚛️",  level: "expert"       },
-  { name: "Next.js",        category: "frontend", icon: "▲",   level: "expert"       },
-  { name: "Vue.js",         category: "frontend", icon: "💚",  level: "advanced"     },
-  { name: "Nuxt.js",        category: "frontend", icon: "🟢",  level: "advanced"     },
-  { name: "React Native",   category: "frontend", icon: "📱",  level: "advanced"     },
-  { name: "TypeScript",     category: "frontend", icon: "🔷",  level: "expert"       },
-  { name: "Tailwind CSS",   category: "frontend", icon: "🌊",  level: "expert"       },
-  { name: "Redux",          category: "frontend", icon: "🔄",  level: "advanced"     },
-  { name: "Zustand",        category: "frontend", icon: "🐻",  level: "advanced"     },
-  { name: "Socket.io",      category: "frontend", icon: "🔌",  level: "advanced"     },
-  { name: "Framer Motion",  category: "frontend", icon: "🎭",  level: "advanced"     },
-  // Backend
-  { name: "Node.js",        category: "backend",  icon: "📗",  level: "expert"       },
-  { name: "NestJS",         category: "backend",  icon: "🐈",  level: "expert"       },
-  { name: "Express",        category: "backend",  icon: "🚂",  level: "expert"       },
-  { name: "REST API",       category: "backend",  icon: "🔗",  level: "expert"       },
-  { name: "oRPC",           category: "backend",  icon: "📡",  level: "advanced"     },
-  { name: "Prisma",         category: "backend",  icon: "💎",  level: "expert"       },
-  { name: "JWT",            category: "backend",  icon: "🔐",  level: "expert"       },
-  { name: "OAuth2",         category: "backend",  icon: "🛡️",  level: "advanced"     },
-  { name: "Passport.js",    category: "backend",  icon: "🛂",  level: "advanced"     },
-  { name: "Clerk",          category: "backend",  icon: "👤",  level: "advanced"     },
-  { name: "BetterAuth",     category: "backend",  icon: "🔒",  level: "advanced"     },
-  { name: "RabbitMQ",       category: "backend",  icon: "🐇",  level: "advanced"     },
-  // Database
-  { name: "PostgreSQL",     category: "database", icon: "🐘",  level: "expert"       },
-  { name: "MongoDB",        category: "database", icon: "🍃",  level: "expert"       },
-  { name: "MySQL",          category: "database", icon: "🐬",  level: "advanced"     },
-  { name: "Redis",          category: "database", icon: "🔴",  level: "advanced"     },
-  // DevOps
-  { name: "Docker",         category: "devops",   icon: "🐳",  level: "expert"       },
-  { name: "Nginx",          category: "devops",   icon: "🌐",  level: "advanced"     },
-  { name: "GitHub Actions", category: "devops",   icon: "⚙️",  level: "advanced"     },
-  { name: "AWS",            category: "devops",   icon: "☁️",  level: "intermediate" },
-  { name: "EC2",            category: "devops",   icon: "🖥️",  level: "advanced"     },
-  { name: "VPS",            category: "devops",   icon: "🔧",  level: "expert"       },
-  { name: "Dokploy",        category: "devops",   icon: "🚀",  level: "advanced"     },
-  { name: "Coolify",        category: "devops",   icon: "❄️",  level: "advanced"     },
-  // AI & Scraping
-  { name: "Python",         category: "ai",       icon: "🐍",  level: "advanced"     },
-  { name: "Web Scraping",   category: "ai",       icon: "🕸️",  level: "expert"       },
-  { name: "Selenium",       category: "ai",       icon: "🤖",  level: "expert"       },
-  { name: "BeautifulSoup",  category: "ai",       icon: "🍵",  level: "expert"       },
-  { name: "Puppeteer",      category: "ai",       icon: "🎭",  level: "advanced"     },
-  { name: "Scrapy",         category: "ai",       icon: "🕷️",  level: "advanced"     },
-  // Design
-  { name: "Figma",              category: "design",  icon: "🖌️",  level: "advanced" },
-  { name: "Canva",              category: "design",  icon: "🎨",  level: "expert"   },
-  { name: "Adobe Illustrator",  category: "design",  icon: "✏️",  level: "advanced" },
-  { name: "Adobe Photoshop",    category: "design",  icon: "🖼️",  level: "advanced" },
-  // SEO & CMS
-  { name: "WordPress",           category: "seo", icon: "📝",  level: "advanced" },
-  { name: "SEO",                 category: "seo", icon: "🔍",  level: "expert"   },
-  { name: "SEMrush",             category: "seo", icon: "📊",  level: "advanced" },
-  { name: "Google Analytics",    category: "seo", icon: "📈",  level: "advanced" },
-  { name: "Google Search Console", category: "seo", icon: "🔎", level: "advanced" },
+  // ── Frontend ──
+  // React: official atom logo emoji
+  { name: "React",         category: "frontend", icon: "⚛️", level: "expert"   },
+  // Next.js: official black triangle logo
+  { name: "Next.js",       category: "frontend", icon: "▲",  level: "expert"   },
+  // Vue.js: 🔰 green V-shield shape matches Vue logo
+  { name: "Vue.js",        category: "frontend", icon: "🔰", level: "advanced" },
+  // Nuxt.js: green mountain/leaf — Nuxt brand is green
+  { name: "Nuxt.js",       category: "frontend", icon: "🌿", level: "advanced" },
+  // React Native: mobile phone with arrow = cross-platform mobile
+  { name: "React Native",  category: "frontend", icon: "📲", level: "advanced" },
+  // TypeScript: blue diamond = TS blue branding
+  { name: "TypeScript",    category: "frontend", icon: "🔷", level: "expert"   },
+  // Tailwind: wind/wave matches tailwind name
+  { name: "Tailwind CSS",  category: "frontend", icon: "🌊", level: "expert"   },
+  // Redux: purple circular arrow = state cycle
+  { name: "Redux",         category: "frontend", icon: "🔄", level: "advanced" },
+  // Zustand: bear is Zustand's official mascot
+  { name: "Zustand",       category: "frontend", icon: "🐻", level: "advanced" },
+  // Socket.io: lightning = real-time fast connection
+  { name: "Socket.io",     category: "frontend", icon: "⚡", level: "advanced" },
+  // Framer Motion: clapperboard = animation/motion
+  { name: "Framer Motion", category: "frontend", icon: "🎬", level: "advanced" },
+
+  // ── Backend ──
+  // Node.js: green heart = Node's signature green color
+  { name: "Node.js",    category: "backend", icon: "💚", level: "expert"   },
+  // NestJS: cat is the NestJS official mascot
+  { name: "NestJS",     category: "backend", icon: "🐈", level: "expert"   },
+  // Express: fire = fast/lightweight
+  { name: "Express",    category: "backend", icon: "🔥", level: "expert"   },
+  // REST API: chain link = connected endpoints
+  { name: "REST API",   category: "backend", icon: "🔗", level: "expert"   },
+  // oRPC: satellite dish = remote procedure calls
+  { name: "oRPC",       category: "backend", icon: "📡", level: "advanced" },
+  // Prisma: triangle prism = Prisma logo shape
+  { name: "Prisma",     category: "backend", icon: "🔺", level: "expert"   },
+  // JWT: key = tokens/auth
+  { name: "JWT",        category: "backend", icon: "🗝️", level: "expert"   },
+  // OAuth2: shield = secure authorization
+  { name: "OAuth2",     category: "backend", icon: "🛡️", level: "advanced" },
+  // Passport.js: ticket/pass = identity passport
+  { name: "Passport.js",category: "backend", icon: "🎫", level: "advanced" },
+  // Clerk: user silhouette = user management
+  { name: "Clerk",      category: "backend", icon: "👤", level: "advanced" },
+  // BetterAuth: padlock = authentication security
+  { name: "BetterAuth", category: "backend", icon: "🔒", level: "advanced" },
+  // RabbitMQ: rabbit = official RabbitMQ mascot
+  { name: "RabbitMQ",   category: "backend", icon: "🐇", level: "advanced" },
+
+  // ── Database ──
+  // PostgreSQL: elephant = official Postgres logo
+  { name: "PostgreSQL", category: "database", icon: "🐘", level: "expert"   },
+  // MongoDB: leaf = MongoDB's green leaf logo
+  { name: "MongoDB",    category: "database", icon: "🍃", level: "expert"   },
+  // MySQL: dolphin = MySQL's official mascot "Sakila"
+  { name: "MySQL",      category: "database", icon: "🐬", level: "advanced" },
+  // Redis: red circle = Redis brand color
+  { name: "Redis",      category: "database", icon: "🔴", level: "advanced" },
+
+  // ── DevOps & Cloud ──
+  // Docker: whale = Docker's official logo
+  { name: "Docker",         category: "devops", icon: "🐳", level: "expert"       },
+  // Nginx: globe = web server / proxy
+  { name: "Nginx",          category: "devops", icon: "🌐", level: "advanced"     },
+  // GitHub Actions: repeat arrows = CI/CD automation loop
+  { name: "GitHub Actions", category: "devops", icon: "🔁", level: "advanced"     },
+  // AWS: cloud = Amazon Web Services
+  { name: "AWS",            category: "devops", icon: "☁️", level: "intermediate" },
+  // EC2: computer disk = compute server instance
+  { name: "EC2",            category: "devops", icon: "💽", level: "advanced"     },
+  // VPS: wrench = manual server management
+  { name: "VPS",            category: "devops", icon: "🔧", level: "expert"       },
+  // Dokploy: package box = deployment packaging
+  { name: "Dokploy",        category: "devops", icon: "📦", level: "advanced"     },
+  // Coolify: snowflake = "cool" + self-hosted brand
+  { name: "Coolify",        category: "devops", icon: "❄️", level: "advanced"     },
+
+  // ── AI & Scraping ──
+  // Python: snake = Python logo
+  { name: "Python",        category: "ai", icon: "🐍", level: "advanced" },
+  // Web Scraping: spider web = scraping the web
+  { name: "Web Scraping",  category: "ai", icon: "🕸️", level: "expert"   },
+  // Selenium: robot = browser automation
+  { name: "Selenium",      category: "ai", icon: "🤖", level: "expert"   },
+  // BeautifulSoup: tea cup = "soup" in the name
+  { name: "BeautifulSoup", category: "ai", icon: "🍵", level: "expert"   },
+  // Puppeteer: matryoshka = puppet/controlled browser
+  { name: "Puppeteer",     category: "ai", icon: "🪆", level: "advanced" },
+  // Scrapy: spider = spider crawling the web
+  { name: "Scrapy",        category: "ai", icon: "🕷️", level: "advanced" },
+
+  // ── Design ──
+  // Figma: paintbrush = design tool
+  { name: "Figma",             category: "design", icon: "🖌️", level: "advanced" },
+  // Canva: artist palette = graphic design
+  { name: "Canva",             category: "design", icon: "🎨", level: "expert"   },
+  // Adobe Illustrator: pen nib = vector illustration
+  { name: "Adobe Illustrator", category: "design", icon: "✒️", level: "advanced" },
+  // Adobe Photoshop: mountain landscape = image editing
+  { name: "Adobe Photoshop",   category: "design", icon: "🏔️", level: "advanced" },
+
+  // ── SEO & CMS ──
+  // WordPress: memo/post = content publishing
+  { name: "WordPress",            category: "seo", icon: "📝", level: "advanced" },
+  // SEO: magnifying glass = search optimization
+  { name: "SEO",                  category: "seo", icon: "🔍", level: "expert"   },
+  // SEMrush: bar chart = analytics/rankings
+  { name: "SEMrush",              category: "seo", icon: "📊", level: "advanced" },
+  // Google Analytics: line chart = traffic analytics
+  { name: "Google Analytics",     category: "seo", icon: "📈", level: "advanced" },
+  // Google Search Console: right-pointing magnifier = search indexing
+  { name: "Google Search Console",category: "seo", icon: "🔎", level: "advanced" },
 ];
 
 const LEVEL_DOT: Record<Skill["level"], string> = {
@@ -103,46 +159,7 @@ export default function SkillsSection() {
   const filtered = active === "all" ? SKILLS : SKILLS.filter((s) => s.category === active);
 
   return (
-    <section id="skills" className="w-full py-8 px-4 sm:px-6">
-
-      {/* ── Section header ── */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="mb-10"
-      >
-        {/* Tag */}
-        <div
-          className="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest"
-          style={{
-            background: "rgba(139,92,246,0.12)",
-            border: "1px solid rgba(139,92,246,0.3)",
-            color: "#a78bfa",
-          }}
-        >
-          <span>⚡</span> Skills &amp; Expertise
-        </div>
-
-        <h2 className="text-3xl sm:text-4xl font-black tracking-tight mb-2">
-          <span
-            style={{
-              background: "linear-gradient(120deg,#a78bfa 0%,#818cf8 40%,#60a5fa 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-            }}
-          >
-            Tech Stack
-          </span>{" "}
-          &amp; Expertise
-        </h2>
-        <p className="text-muted-foreground text-sm max-w-xl">
-          A curated list of technologies I work with daily — from frontend to DevOps, AI automation, and design.
-        </p>
-      </motion.div>
-
+    <section id="skills" className="w-full">
       {/* ── Category filter tabs ── */}
       <motion.div
         initial={{ opacity: 0, y: 12 }}
