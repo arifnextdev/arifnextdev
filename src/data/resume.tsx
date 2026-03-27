@@ -113,7 +113,7 @@ export const DATA = {
 	work: [
 		{
 			company: "Way Wise Global",
-			href: "#",
+			href: "https://waywisetech.com",
 			badges: [],
 			location: "On Site",
 			title: "Full Stack Developer",
@@ -126,7 +126,7 @@ export const DATA = {
 		},
 		{
 			company: "360 Support",
-			href: "#",
+			href: "https://www.360-supports.com",
 			badges: [],
 			location: "On Site",
 			title: "Full Stack Developer",
@@ -152,7 +152,7 @@ export const DATA = {
 		{
 			company: "Mathmozo IT",
 			badges: [],
-			href: "https://mathmozo.com/",
+			href: "https://mathmozo.com",
 			location: "On Site",
 			title: "Junior Web Developer",
 			logoUrl: "/mathmozo.jpg",
@@ -165,7 +165,7 @@ export const DATA = {
 	education: [
 		{
 			school: "Canadian University of Bangladesh",
-			href: "#",
+			href: "https://cub.edu.bd",
 			degree: "BSC in CSE",
 			logoUrl:
 				"https://gallery.cub.ac.bd/var/albums/Web-Photos/CUB/Home/cub_logo-01/CUB_Logo.png?m=1681102027",
@@ -174,7 +174,7 @@ export const DATA = {
 		},
 		{
 			school: "HABHIT",
-			href: "https://www.habhit.edu.bd/",
+			href: "https://www.habhit.edu.bd",
 			degree: "Diploma in Computer Science",
 			logoUrl:
 				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQvbp1w5rBlVsMwzaQzVNK4P8sXGQum-zVQ&s",
@@ -361,5 +361,54 @@ export const DATA = {
 				"https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
 		},
 	],
+	aiAutomation: {
+		headline: "AI Automation & Intelligent Solutions",
+		subheadline:
+			"Transforming businesses with cutting-edge AI integration, intelligent automation workflows, and data-driven solutions that scale.",
+		services: [
+			{
+				icon: "🤖",
+				title: "Intelligent Web Scraping",
+				description:
+					"Automated data extraction systems using Python, Selenium, BeautifulSoup, Puppeteer & Scrapy with smart rate limiting and proxy rotation.",
+				tech: ["Python", "Selenium", "Puppeteer", "Scrapy"],
+			},
+			{
+				icon: "💬",
+				title: "AI-Powered Chatbots",
+				description:
+					"Custom conversational AI solutions integrated with WhatsApp, web platforms, and business workflows for 24/7 customer engagement.",
+				tech: ["Node.js", "NestJS", "RabbitMQ", "REST API"],
+			},
+			{
+				icon: "⚡",
+				title: "Workflow Automation",
+				description:
+					"End-to-end process automation — from data ingestion to report generation — reducing manual work by up to 80%.",
+				tech: ["Node.js", "Docker", "GitHub Actions", "Redis"],
+			},
+			{
+				icon: "🔄",
+				title: "Smart Data Pipelines",
+				description:
+					"Real-time data processing pipelines with queue-based architecture for handling high-throughput operations efficiently.",
+				tech: ["RabbitMQ", "PostgreSQL", "Redis", "Docker"],
+			},
+			{
+				icon: "📈",
+				title: "AI-Powered SEO & Analytics",
+				description:
+					"Intelligent SEO optimization with automated content analysis, keyword tracking, and performance monitoring dashboards.",
+				tech: ["Python", "Google Analytics", "SEMrush", "Next.js"],
+			},
+			{
+				icon: "🧠",
+				title: "Predictive Analytics",
+				description:
+					"Data-driven insights and forecasting models to help businesses make informed decisions and stay ahead of competition.",
+				tech: ["Python", "PostgreSQL", "Node.js", "REST API"],
+			},
+		],
+	},
 	hackathons: [],
 } as const;

@@ -1,3 +1,4 @@
+import AIAutomationSection from "@/components/ai-automation-section";
 import MagicCards from "@/components/custom/MagicCard";
 import { HackathonCard } from "@/components/hackathon-card";
 import AnimatedGradientText from "@/components/magicui/animated-gradient-text";
@@ -143,6 +144,9 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <AIAutomationSection />
+
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
