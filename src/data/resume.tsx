@@ -8,9 +8,9 @@ export const DATA = {
 	location: "Agargaon Metro Station, Dhaka, Bangladesh",
 	locationLink: "https://www.google.com/maps/place/Dhaka",
 	description:
-		"Full Stack Developer with 4+ years of experience building scalable web and mobile applications. Experienced in AI automation and integrating intelligent solutions into real-world products.",
+		"Full Stack Developer with 3+ years of experience building scalable web and mobile applications. Experienced in AI automation and integrating intelligent solutions into real-world products.",
 	summary:
-		"Full Stack Developer with 4+ years of experience building scalable web and mobile applications. Skilled in Node.js, Laravel, Python, and modern frontend technologies, with strong expertise in backend architecture and API development. Experienced in AI automation and integrating intelligent solutions into real-world products. Also proficient in graphics design, delivering complete end-to-end digital solutions.",
+		"Full Stack Developer with 3+ years of experience building scalable web and mobile applications. Skilled in Node.js, Laravel, Python, and modern frontend technologies, with strong expertise in backend architecture and API development. Experienced in AI automation and integrating intelligent solutions into real-world products. Also proficient in graphics design, delivering complete end-to-end digital solutions.",
 	avatarUrl: "/arif.jpg",
 	skills: [
 		// Frontend

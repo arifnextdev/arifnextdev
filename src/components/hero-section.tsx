@@ -28,7 +28,7 @@ const ROLES = [
 ];
 
 const STATS = [
-	{ value: "4+", label: "Years Exp", icon: "🚀" },
+	{ value: "3+", label: "Years Exp", icon: "🚀" },
 	{ value: "20+", label: "Projects", icon: "📦" },
 	{ value: "10+", label: "Clients", icon: "🤝" },
 	{ value: "80%", label: "Automation Gain", icon: "⚡" },
